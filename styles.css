@@ -1,0 +1,176 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background: url('assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+    background-color: rgba(88, 147, 211, 0.8) !important; /* Background solid untuk navbar */
+}
+
+.background-text {
+    background-color: rgba(88, 147, 211, 0.8); /* Warna biru dengan transparansi */
+    color: #fff;
+    padding: 60px 0;
+}
+
+.background-text h1, .background-text p {
+    margin: 0;
+}
+
+.card-custom {
+    border-radius: 15px; /* Sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card.border-primary .card-body {
+    background-color: rgba(233, 247, 254, 0.9); /* Warna latar belakang biru muda dengan transparansi */
+}
+
+.card.border-success .card-body {
+    background-color: rgba(232, 245, 233, 0.9); /* Warna latar belakang hijau muda dengan transparansi */
+}
+
+.card.border-info .card-body {
+    background-color: rgba(232, 244, 248, 0.9); /* Warna latar belakang biru muda dengan transparansi */
+}
+
+.card.border-warning .card-body {
+    background-color: rgba(255, 248, 225, 0.9); /* Warna latar belakang kuning muda dengan transparansi */
+}
+
+.card.border-danger .card-body {
+    background-color: rgba(252, 228, 236, 0.9); /* Warna latar belakang merah muda dengan transparansi */
+}
+
+.whatsapp-logo {
+    width: 50px; /* Sesuaikan ukuran logo sesuai keinginan Anda */
+    height: auto;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.marquee {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(88, 147, 211, 0.8); /* Warna latar belakang yang gelap */
+    
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.img-small {
+    width: 200px; /* Atau ukuran yang diinginkan */
+    height: auto;
+}
+
+.underlined-text {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid #0000005e; /* Warna dan ketebalan garis */
+    padding-bottom: 7px; /* Ruang antara teks dan garis */
+    width: 350px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.scroll-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.card-group-horizontal {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem; /* Berikan ruang untuk panah */
+}
+
+.card-group-horizontal .card {
+    flex: 0 0 50%; /* Atur lebar card menjadi 50% dari container */
+    scroll-snap-align: start;
+    width: 50%; /* Menetapkan lebar card secara eksplisit */
+}
+
+.scroll-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.right-arrow {
+    right: 0;
+    padding: 0 10px;
+    background: rgba(255, 255, 255, 0.8); /* Opsional, untuk membuat latar belakang semi-transparan */
+    border-radius: 50%;
+}
+
+.card-group-horizontal::-webkit-scrollbar {
+    height: 8px;
+}
+
+.card-group-horizontal::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.card-group-horizontal::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
